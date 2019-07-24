@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- External Links -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link href="./Style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container text-wrap">
+      <!-- Header -->
+      <div class="col-sm-12 header d-flex  bd-highlight">
+        <p class="d-inline-flex  bd-highlight">Set Security Questions</p>
+        <div class="Shape d-inline-flex"></div>
+      </div>
+      <!-- Body -->
+      <div class="col-sm-12 body d-flex flex-column  bd-highlight">
+        <!-- Title -->
+        <p class="d-inline-flex hd bd-highlight">
+          For your convenience, set your security question.
+        </p>
+        <!-- Body -->
+        <p class="d-inline-flex bd  bd-highlight text-wrap">
+          If there ever comes a time where you forget your password, instead of
+          having to go to your email, you just fill in your security question,
+          reset your password you are in!! Make sure to look over your answer
+          before saving!
+        </p>
+        <div class="alert d-inline-flex">
+          <div class="error"></div>
+          <div class="content">
+            <div class="title">INVALID INFORMATION</div>
+            <div class="subTitle text-wrap">
+              An answer with 1 or less characters was submitted, or no answer
+              was submitted, please try again.
+            </div>
+          </div>
+        </div>
+        <p class="d-inline-flex FormSubHead  bd-highlight">
+          Select Your Security Question
+        </p>
+        <!-- Select -->
+        <div class="selectWrapper">
+          <select class="select mb-3 text-truncate">
+            <div class="dummy">
+              <option value="grandma" class="text-truncate" selected>
+                What is your maternal grandmother’s maden name?</option
+              >
+            </div>
+            <option value="kissed"
+              >What is the first name of the person you first kissed?</option
+            >
+            <option value="friend"
+              >What is the name of your favorite childhood friend?</option
+            >
+            <option value="teacher"
+              >What was the last name of your third grade teacher?
+            </option>
+            <option value="street"
+              >What was the name of the street you grew up on?</option
+            >
+            <option value="nickName">What was your childhood nickname?</option>
+            <option value="car">What is the make of your first car?</option>
+            <option value="pet">What is the name of your first pet?</option>
+          </select>
+        </div>
+        <p class="d-inline-flex FormSubHead2  bd-highlight">
+          Type the Answer to Security Question
+        </p>
+        <!-- Input -->
+        <input type="text" class="input" />
+        <!-- Recaptcha -->
+        <div
+          class="g-recaptcha"
+          data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"
+        ></div>
+      </div>
+      <!-- Footer -->
+      <div class="col-sm-12 footer d-flex  bd-highlight">
+        <div>
+          <button class="button d-inline-flex align1 text-center">
+            <div class="btnLeft">
+              Skip this Step
+            </div>
+          </button>
+          <button class="button d-inline-flex align2 text-center">
+            <div class="btnRight">
+              Save Security Information
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
