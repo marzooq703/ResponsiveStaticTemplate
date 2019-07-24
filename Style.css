@@ -139,6 +139,38 @@
   margin-left: 52px;
   color: #212121;
 }
+/* .selectpicker {
+  width: 500px;
+  height: 56px;
+  border-radius: 4px;
+  padding-left: 10px;
+  border: solid 2.5px #212121;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+} */
+.customSelect {
+  height: 100%;
+}
+.bootstrap-select > .dropdown-toggle {
+  /* width: 500px !important; */
+  height: 56px;
+  border: 2.5px solid #212121;
+}
+.bootstrap-select > .dropdown-toggle:after {
+  display: none;
+}
+.subOption {
+  font-family: Roboto;
+  padding-top: 3%;
+  border: 1.3px solid #212121;
+  /* margin-bottom: 2px; */
+  width: 100%;
+  height: 56px;
+  overflow: hidden;
+}
 .select {
   width: 500px;
   height: 56px;
@@ -177,6 +209,7 @@
 }
 .dummy {
   background: #8bc34a;
+  border: solid 2.5px #212121;
 }
 /* .select option[value="grandma"] {
   border: solid 5px #8bc34a;
@@ -277,6 +310,9 @@ select:focus {
   }
   .select {
     height: 40px;
+    width: 200px;
+  }
+  .subOption {
     width: 200px;
   }
   .selectWrapper {
